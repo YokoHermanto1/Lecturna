@@ -1,0 +1,1397 @@
+/* ===== Hero CSS ===== */
+
+.ud-hero {
+    background: var(--primary-color);
+    padding-top: 180px;
+  
+    @media #{$md} {
+      padding-top: 160px;
+    }
+  
+    @media #{$xs} {
+      padding-top: 130px;
+    }
+  }
+  
+  .ud-hero-content {
+    max-width: 780px;
+    margin: auto;
+    margin-bottom: 30px;
+  
+    .ud-hero-title {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 60px;
+      text-align: center;
+      margin-bottom: 30px;
+  
+      @media #{$md} {
+        font-size: 38px;
+        line-height: 50px;
+      }
+  
+      @media #{$xs} {
+        font-size: 26px;
+        line-height: 38px;
+      }
+    }
+  
+    .ud-hero-desc {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 35px;
+      text-align: center;
+      color: var(--white);
+      opacity: 0.8;
+      max-width: 600px;
+      margin: auto;
+      margin-bottom: 30px;
+  
+      @media #{$xs} {
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
+  
+  .ud-hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .ud-main-btn {
+      margin: 8px;
+  
+      @media #{$xs} {
+        margin: 5px;
+      }
+    }
+  
+    .ud-main-btn {
+      @media #{$xs} {
+        padding: 12px 16px;
+      }
+    }
+  
+    .ud-white-btn {
+      background: var(--white);
+      color: var(--heading-color);
+  
+      &:hover {
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+        background: #fefefe;
+        color: var(--primary-color);
+      }
+    }
+  
+    .ud-link-btn {
+      &:hover {
+        color: var(--white);
+        background: transparent;
+        opacity: 0.5;
+      }
+    }
+  }
+  
+  .ud-hero-brands-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+  
+    img {
+      transition: all 0.3s;
+      opacity: 0.5;
+      max-width: 250px;
+  
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .ud-hero-image {
+    max-width: 845px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  
+    img {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .shape {
+      position: absolute;
+      z-index: -1;
+  
+      &.shape-1 {
+        bottom: 0;
+        left: -30px;
+      }
+  
+      &.shape-2 {
+        top: -20px;
+        right: -20px;
+      }
+    }
+  }
+
+/* ====== Banner CSS ======= */
+.ud-page-banner {
+    padding-top: 130px;
+    padding-bottom: 80px;
+    background: var(--primary-color);
+    background-image: url("banner-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .ud-banner-content {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+  
+    h1 {
+      color: var(--white);
+      font-size: 38px;
+      font-weight: 600;
+    }
+  }
+/* ======================
+    DEFAULT CSS
+========================= */
+
+// Margin-top
+@for $i from 1 through 45 {
+    .mt-#{5 * $i} {
+      margin-top: 5px * $i;
+    }
+  }
+  
+  // Margin-bottom
+  @for $i from 1 through 45 {
+    .mb-#{5 * $i} {
+      margin-bottom: 5px * $i;
+    }
+  }
+  
+  // Padding-top
+  @for $i from 1 through 45 {
+    .pt-#{5 * $i} {
+      padding-top: 5px * $i;
+    }
+  }
+  
+  // Padding-bottom
+  @for $i from 1 through 45 {
+    .pb-#{5 * $i} {
+      padding-bottom: 5px * $i;
+    }
+  }
+
+/* ===== About CSS ===== */
+
+.ud-about {
+    background: #f3f4fe;
+    padding: 120px 0;
+  
+    @media #{$xs} {
+      padding: 80px 0;
+    }
+  }
+  
+  .ud-about-wrapper {
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+  
+    @media #{$md, $xs} {
+      display: block;
+    }
+  }
+  
+  .ud-about-content-wrapper {
+    padding: 70px;
+  
+    @media #{$xs} {
+      padding: 50px 30px;
+    }
+  
+    @media #{$sm} {
+      padding: 50px;
+    }
+  }
+  
+  .ud-about-content {
+    max-width: 500px;
+  }
+    .tag {
+      font-weight: 500;
+      font-size: 14px;
+      color: var(--white);
+      background: var(--primary-color);
+      padding: 5px 20px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  
+    h2 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 45px;
+      margin-bottom: 30px;
+  
+      @media #{$xs} {
+        font-size: 26px;
+        line-height: 38px;
+      }
+    }
+  
+    p {
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
+  
+  .ud-about-image {
+    @media #{$md, $xs} {
+      text-align: center;
+    }
+  }
+
+/* ===== Features CSS ===== */
+
+.ud-features {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  
+    @media #{$xs} {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  .ud-section-title {
+    max-width: 620px;
+    margin-bottom: 70px;
+  
+    span {
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+  
+    h2 {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 55px;
+      text-transform: capitalize;
+      color: var(--heading-color);
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 20px;
+      line-height: 30px;
+  
+      @media #{$xs} {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+  }
+  
+  .ud-single-feature {
+    margin-bottom: 40px;
+  
+    &:hover {
+      .ud-feature-icon::before {
+        @include transform(rotate(45deg));
+      }
+    }
+  
+    .ud-feature-icon {
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+      background: var(--primary-color);
+      font-size: 32px;
+      color: var(--white);
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin-bottom: 40px;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 14px;
+        background: var(--primary-color);
+        opacity: 0.2;
+        z-index: -1;
+        @include transform(rotate(23deg));
+        @include transition(0.3s);
+      }
+    }
+  
+    .ud-feature-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 12px;
+  
+      @media #{$lg} {
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+  
+    .ud-feature-desc {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+  
+    .ud-feature-link {
+      font-weight: 500;
+      color: var(--body-color);
+  
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+// Responsive Variables
+$xl-desktop: "only screen and (min-width: 1921px)";
+$desktop: "only screen and (min-width: 1400px) and (max-width: 1920px)";
+$laptop: "only screen and (min-width: 1200px) and (max-width: 1399px)";
+$lg: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$md: "only screen and (min-width: 768px) and (max-width: 991px)";
+$xs: "(max-width: 767px)";
+$sm: "only screen and (min-width: 576px) and (max-width: 767px)";
+
+/* ===== Footer CSS ===== */
+
+.ud-footer {
+    background: var(--heading-color);
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  
+    .shape {
+      position: absolute;
+      z-index: -1;
+  
+      &.shape-1 {
+        top: 0;
+        left: 0;
+      }
+  
+      &.shape-2 {
+        top: 0;
+        right: 0;
+      }
+  
+      &.shape-3 {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+  
+  .ud-widget {
+    margin-bottom: 50px;
+  
+    .ud-footer-logo {
+      max-width: 160px;
+      display: block;
+      margin-bottom: 10px;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .ud-widget-desc {
+      font-size: 15px;
+      line-height: 24px;
+      color: #f3f4fe;
+      margin-bottom: 30px;
+      max-width: 260px;
+    }
+  
+    .ud-widget-socials {
+      display: flex;
+      align-items: center;
+  
+      a {
+        font-size: 16px;
+        color: #dddddd;
+        margin-right: 20px;
+  
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  
+    .ud-widget-title {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 35px;
+      color: var(--white);
+    }
+  
+    .ud-widget-links {
+      a {
+        display: inline-block;
+        margin-bottom: 12px;
+        font-size: 15px;
+        line-height: 30px;
+        color: #f3f4fe;
+  
+        &:hover {
+          color: var(--primary-color);
+          padding-left: 10px;
+        }
+      }
+    }
+  
+    .ud-widget-brands {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+      a {
+        display: block;
+        max-width: 120px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+  
+        @media #{$laptop} {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+  
+  .ud-footer-bottom {
+    padding: 35px 0;
+    border-top: 1px solid rgba(136, 144, 164, 0.43);
+  
+    .ud-footer-bottom-left {
+      display: flex;
+      align-items: center;
+  
+      @media #{$xs} {
+        justify-content: center;
+      }
+  
+      a {
+        font-weight: normal;
+        font-size: 15px;
+        color: #f3f4fe;
+        margin-right: 30px;
+        display: inline-block;
+  
+        @media #{$xs} {
+          margin: 0px 8px 8px;
+        }
+  
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  
+    .ud-footer-bottom-right {
+      text-align: right;
+      font-weight: normal;
+      font-size: 15px;
+      color: #f3f4fe;
+  
+      a {
+        color: var(--primary-color);
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+  
+      @media #{$xs} {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  /* ===== Pricing CSS ===== */
+
+.ud-pricing {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  
+    @media #{$xs} {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  .ud-single-pricing {
+    margin-bottom: 40px;
+    background: var(--white);
+    border: 2px solid #d4deff;
+    border-radius: 8px;
+    text-align: center;
+    padding: 45px 30px;
+    position: relative;
+  
+    &.active {
+      background: linear-gradient(180deg, #3056d3 0%, #179bee 100%);
+      border: none;
+      padding: 55px 30px;
+  
+      .ud-pricing-header {
+        h3,
+        h4 {
+          color: var(--white);
+        }
+      }
+      .ud-pricing-body {
+        li {
+          color: var(--white);
+        }
+      }
+    }
+  
+    &.first-item::after,
+    &.last-item::after {
+      content: "";
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      z-index: 1;
+    }
+  
+    &.first-item::after {
+      background: var(--primary-color);
+      left: -2px;
+      bottom: -2px;
+      border-radius: 0px 55px 0px 8px;
+    }
+  
+    &.last-item::after {
+      background: #13c296;
+      top: -2px;
+      right: -2px;
+      border-radius: 0px 8px 0px 55px;
+    }
+  
+    .ud-popular-tag {
+      display: inline-block;
+      padding: 10px 25px;
+      background: var(--white);
+      border-radius: 30px;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+  
+    .ud-pricing-header {
+      h3 {
+        font-weight: 500;
+        font-size: 15px;
+        margin-bottom: 8px;
+      }
+      h4 {
+        font-weight: 600;
+        font-size: 26px;
+        color: var(--primary-color);
+        margin-bottom: 40px;
+      }
+    }
+  
+    .ud-pricing-body {
+      margin-bottom: 40px;
+  
+      li {
+        font-weight: 500;
+        font-size: 15px;
+        margin-bottom: 18px;
+      }
+    }
+  
+    .ud-main-btn {
+      border-radius: 30px;
+      padding: 15px 40px;
+    }
+  
+    .ud-border-btn {
+      border: 1px solid #d4deff;
+      color: var(--primary-color);
+      background: var(--white);
+  
+      &:hover {
+        color: var(--white);
+        border-color: var(--primary-color);
+        background: var(--primary-color);
+      }
+    }
+    .ud-white-btn {
+      background: var(--white);
+      color: var(--heading-color);
+  
+      &:hover {
+        color: var(--white);
+        background: var(--heading-color);
+      }
+    }
+  }
+
+  /* ===== FAQ CSS ===== */
+
+.ud-faq {
+    padding-top: 120px;
+    padding-bottom: 90px;
+    background: #f3f4fe;
+    position: relative;
+    z-index: 1;
+  
+    @media #{$xs } {
+      padding-top: 80px;
+      padding-bottom: 50px;
+    }
+  
+    .shape {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  
+  .ud-single-faq {
+    background: var(--white);
+    border: 1px solid #f3f4fe;
+    box-shadow: 0px 20px 95px rgba(201, 203, 204, 0.3);
+    border-radius: 10px;
+    margin-bottom: 30px;
+  
+    .ud-faq-btn {
+      text-align: left;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      border: none;
+      background: transparent;
+  
+      font-weight: 600;
+      font-size: 18px;
+      color: var(--heading-color);
+      opacity: 0.88;
+      padding: 30px;
+  
+      @media #{$lg, $xs} {
+        padding: 15px;
+      }
+  
+      &.collapsed {
+        span.icon i {
+          @include transform(rotate(0deg));
+        }
+      }
+  
+      span.icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        background: rgba(48, 86, 211, 0.06);
+        border-radius: 10px;
+        color: var(--primary-color);
+        margin-right: 24px;
+  
+        i {
+          @include transform(rotate(180deg));
+          transition: all 0.3s;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  
+    .ud-faq-body {
+      padding: 0px 30px 40px 95px;
+  
+      @media #{$lg, $xs} {
+        padding: 0px 16px 20px 82px;
+      }
+    }
+  }
+/* ===== Footer CSS ===== */
+
+.ud-footer {
+    background: var(--heading-color);
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  
+    .shape {
+      position: absolute;
+      z-index: -1;
+  
+      &.shape-1 {
+        top: 0;
+        left: 0;
+      }
+  
+      &.shape-2 {
+        top: 0;
+        right: 0;
+      }
+  
+      &.shape-3 {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+  
+  .ud-widget {
+    margin-bottom: 50px;
+  
+    .ud-footer-logo {
+      max-width: 160px;
+      display: block;
+      margin-bottom: 10px;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .ud-widget-desc {
+      font-size: 15px;
+      line-height: 24px;
+      color: #f3f4fe;
+      margin-bottom: 30px;
+      max-width: 260px;
+    }
+  
+    .ud-widget-socials {
+      display: flex;
+      align-items: center;
+  
+      a {
+        font-size: 16px;
+        color: #dddddd;
+        margin-right: 20px;
+  
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  
+    .ud-widget-title {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 35px;
+      color: var(--white);
+    }
+  
+    .ud-widget-links {
+      a {
+        display: inline-block;
+        margin-bottom: 12px;
+        font-size: 15px;
+        line-height: 30px;
+        color: #f3f4fe;
+  
+        &:hover {
+          color: var(--primary-color);
+          padding-left: 10px;
+        }
+      }
+    }
+  
+    .ud-widget-brands {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+      a {
+        display: block;
+        max-width: 120px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+  
+        @media #{$laptop} {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+  
+  .ud-footer-bottom {
+    padding: 35px 0;
+    border-top: 1px solid rgba(136, 144, 164, 0.43);
+  
+    .ud-footer-bottom-left {
+      display: flex;
+      align-items: center;
+  
+      @media #{$xs} {
+        justify-content: center;
+      }
+  
+      a {
+        font-weight: normal;
+        font-size: 15px;
+        color: #f3f4fe;
+        margin-right: 30px;
+        display: inline-block;
+  
+        @media #{$xs} {
+          margin: 0px 8px 8px;
+        }
+  
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  
+    .ud-footer-bottom-right {
+      text-align: right;
+      font-weight: normal;
+      font-size: 15px;
+      color: #f3f4fe;
+  
+      a {
+        color: var(--primary-color);
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+  
+      @media #{$xs} {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  @mixin transition($time) {
+	-webkit-transition: all $time ease-out 0s;
+	-moz-transition: all $time ease-out 0s;
+	-ms-transition: all $time ease-out 0s;
+	-o-transition: all $time ease-out 0s;
+	transition: all $time ease-out 0s;
+}
+
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+     -moz-transform: $value;
+      -ms-transform: $value;
+       -o-transform: $value;
+          transform: $value;
+}
+
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+     -moz-user-select: $value;
+      -ms-user-select: $value;
+          user-select: $value;
+}
+
+
+@mixin box-sizing($value) {
+  -webkit-box-sizing: $value;
+     -moz-box-sizing: $value;
+          box-sizing: $value;
+}
+
+
+@mixin animation($value) {
+  -webkit-animation: $value;
+     -moz-animation: $value;
+       -o-animation: $value;
+          animation: $value;
+}
+
+
+@mixin animation-delay($value) {
+  -webkit-animation-delay: $value;
+     -moz-animation-delay: $value;
+       -o-animation-delay: $value;
+          animation-delay: $value;
+}
+
+
+
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+     -moz-box-shadow: $value;
+          box-shadow: $value;
+}
+
+
+// Placeholder Mixins
+@mixin placeholder {
+    &::placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+/* ===== Contact CSS ===== */
+.ud-contact {
+    padding: 120px 0px;
+    position: relative;
+  
+    @media #{$xs} {
+      padding: 80px 0;
+    }
+  
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 50%;
+      background: #f3f4fe;
+  
+      @media #{$lg} {
+        height: 45%;
+      }
+    }
+  }
+  
+  .ud-contact-title {
+    margin-bottom: 150px;
+  
+    @media #{$md, $xs} {
+      margin-bottom: 50px;
+    }
+  
+    span {
+      color: var(--heading-color);
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+  
+    h2 {
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 41px;
+    }
+  }
+  
+  .ud-contact-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+    @media #{$md, $xs} {
+      margin-bottom: 50px;
+    }
+  
+    .ud-single-info {
+      display: flex;
+      max-width: 100%;
+      width: 330px;
+      margin-bottom: 30px;
+    }
+  
+    .ud-info-icon {
+      font-size: 32px;
+      color: var(--primary-color);
+      margin-right: 24px;
+    }
+  
+    .ud-info-meta {
+      h5 {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+  
+      p {
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
+  
+  .ud-contact-form-wrapper {
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background: var(--white);
+    padding: 60px;
+  
+    @media #{$xs} {
+      padding: 40px 30px;
+    }
+  
+    @media #{$laptop, $lg, $sm} {
+      padding: 50px 40px;
+    }
+  
+    .ud-contact-form-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      margin-bottom: 30px;
+  
+      @media #{$xs} {
+        font-size: 24px;
+      }
+    }
+  
+    .ud-form-group {
+      margin-bottom: 25px;
+  
+      label {
+        display: block;
+        font-weight: normal;
+        font-size: 12px;
+      }
+  
+      input,
+      textarea {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #f1f1f1;
+        resize: none;
+  
+        &:focus {
+          border-color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+/* ===== Testimonials CSS ===== */
+.ud-testimonials {
+    padding-top: 120px;
+  
+    @media #{$xs} {
+      padding-top: 80px;
+    }
+  }
+  
+  .ud-single-testimonial {
+    padding: 30px;
+    box-shadow: 0px 60px 120px -20px #ebeffd;
+    background: var(--white);
+    margin-bottom: 50px;
+  
+    .ud-testimonial-ratings {
+      margin-bottom: 10px;
+  
+      i {
+        color: #fbb040;
+      }
+    }
+  
+    .ud-testimonial-content {
+      margin-bottom: 25px;
+  
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        color: #637381;
+      }
+    }
+  
+    .ud-testimonial-info {
+      display: flex;
+      align-items: center;
+  
+      .ud-testimonial-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+      }
+  
+      .ud-testimonial-meta {
+        h4 {
+          font-weight: 600;
+          font-size: 14px;
+        }
+  
+        p {
+          font-size: 12px;
+          color: #969696;
+        }
+      }
+    }
+  }
+  
+  .ud-brands {
+    .ud-title {
+      margin-bottom: 30px;
+  
+      h6 {
+        font-weight: normal;
+        font-size: 12px;
+        color: var(--body-color);
+        display: inline-block;
+        position: relative;
+  
+        &::after {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 1px;
+          background: #afb2b5;
+          right: -40px;
+          top: 50%;
+        }
+      }
+    }
+  
+    .ud-brands-logo {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-right: -40px;
+  
+      .ud-single-logo {
+        margin-right: 40px;
+        margin-bottom: 20px;
+        max-width: 140px;
+  
+        &:hover {
+          img {
+            filter: none;
+          }
+        }
+  
+        img {
+          filter: grayscale(1);
+          @include transition(0.3s);
+        }
+      }
+    }
+  }
+
+/* ===== Team CSS ===== */
+.ud-team {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  
+    @media #{$xs} {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  .ud-single-team {
+    margin-bottom: 40px;
+  
+    .ud-team-image-wrapper {
+      width: 170px;
+      height: 170px;
+      position: relative;
+      margin: 0px auto 25px;
+    }
+    .ud-team-image {
+      border-radius: 50%;
+  
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+  
+    .shape {
+      position: absolute;
+      z-index: -1;
+  
+      &.shape-1 {
+        top: 0;
+        left: 0;
+      }
+      &.shape-2 {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  
+    .ud-team-info {
+      text-align: center;
+      margin-bottom: 20px;
+  
+      h5 {
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+  
+      h6 {
+        font-weight: 500;
+        font-size: 12px;
+        color: var(--body-color);
+      }
+    }
+  
+    .ud-team-socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      a {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 10px;
+        color: #cdced6;
+  
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+/* ====== Login CSS ====== */
+.ud-login {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .ud-login-wrapper {
+    max-width: 500px;
+    margin: auto;
+    background: var(--white);
+    text-align: center;
+    padding: 60px;
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.05);
+  
+    .ud-login-logo {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .ud-login-form {
+    .ud-form-group {
+      margin-bottom: 25px;
+  
+      input {
+        width: 100%;
+        border: 2px solid #dddddd;
+        border-radius: 4px;
+        padding: 12px 24px;
+        background: #fcfdfe;
+        color: var(--body-color);
+  
+        &:focus {
+          border-color: var(--primary-color);
+        }
+      }
+    }
+  }
+  
+  .ud-socials-connect {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  
+    p {
+      font-size: 16px;
+      color: var(--body-color);
+      margin-bottom: 10px;
+    }
+  
+    ul {
+      display: flex;
+      align-items: center;
+      margin-left: -10px;
+      margin-right: -10px;
+  
+      li {
+        width: 100%;
+  
+        a {
+          height: 45px;
+          background: var(--primary-color);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 10px;
+          border-radius: 6px;
+          color: var(--white);
+          font-size: 20px;
+  
+          &.facebook {
+            background: #4064ac;
+  
+            &:hover {
+              background: #315294;
+            }
+          }
+  
+          &.twitter {
+            background: #1c9cea;
+  
+            &:hover {
+              background: #0f8bd8;
+            }
+          }
+  
+          &.google {
+            background: #d64937;
+  
+            &:hover {
+              background: #c53b29;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .forget-pass {
+    font-size: 16px;
+    color: var(--body-color);
+    margin-bottom: 8px;
+  }
+  
+  .signup-option {
+    color: var(--body-color);
+    font-size: 16px;
+  
+    a {
+      color: var(--primary-color);
+    }
+  }
+
+
