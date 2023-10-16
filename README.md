@@ -2,7 +2,7 @@
 Lecturna is a coding course for children aged 7 to 17 years old to develop their potential.
 
 # Deficiency
-- The code is still not perfect <br>
+- The code is still not perfect
 - Not Responsive
 
 
